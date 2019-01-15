@@ -324,28 +324,51 @@ Un sistema de información adecuado abre la posibilidad del uso de tecnologías 
 
 En vez de desarrollar una aplicación específica para el trabajo con un conjunto específico de datos, es común en el campo de ciencia de datos, contar con un entorno completo de trabajo capaz de generar modelos, herramientas y visualizaciones de manera dinámica. 
 
-Normalmente este tipo de entornos de trabajo permiten correr código e interactuar con los datos y objetos de programación de manera interactiva, permitiendo así un ritmo de trabajo acelerado.
+Este tipo de entornos de trabajo permiten correr código e interactuar con los datos y objetos de programación de manera interactiva, permitiendo así un ritmo de trabajo acelerado.
 
-Con los avances en el campo de desarrollo web, hoy en día es posible contar con entornos de trabajo con los cuales interactuamos a través del navegador y ofrecen herramientas de todo tipo (colaboración, visualización, computo, entre otras).
+Con los avances en el campo de desarrollo web, hoy en día es posible contar con entornos de trabajo con los cuales interactuamos a través del navegador y ofrecen herramientas de colaboración, visualización, computo, entre otras.
 
-Este tipo de entornos de trabajo son extensibles, permitiendonos crear componentes y herramientas a medida.
+Este tipo de entornos de trabajo son extensibles, permitiendonos crear componentes y herramientas a medida de las necesidades cambiantes y emergentes del MMAyA.
 
 Combinando estos avances con tecnología Cloud, tenemos como resultado un entorno de trabajo completo al cual accedemos desde el navegador y cuyo código corre en servidores externos de gran capacidad.
 
+**Aplicacines Web vs. Entornos de Trabajo basados en Tecnologías Web (o Cloud)**
+
+Dentro de la arquitectura web "cliente-servidor" sobre la cual se construye el internet al que estamos acostumbrados, como desarrolladores podemos correr código en dos ambientes distintos: El servidor y el navegador. Esto crea la diferenciación entre el desarrollo "back-end" y "front-end" respectivamente. 
+
+El servidor nos ofrece un ambiente computacional completo (herramientas) y una grán cantidad de recursos computacionales (memoria, CPU). Mientras que el servidor por todas sus limitaciónes de recursos y de herramientas, nos ofrece una interfaz para el usuario estándarizada (una herramienta que corre en un servidor puede ser accesible desde todo tipo de dispositivos: Computadoras Desktop, Laptops, teléfonos, tablets, televisores, etc...) Estos dos ambientes se comunican a través de protocolos de transferencia y sistemas de comunicación automatizada (APIs).
+
+Una aplicación web convencional recupera el código del servidor y accede a recursos proveídos por el servidor para alimentar la aplicación desde el navegador. 
+
+La ventaja de las aplicaciones web convencionales, es que debido a su ligereza, pueden ser servidas a una gran cantidad de usuarios con un uso de recursos computacionales modesto.
+
+Con el avance en tecnologías front-end, back-end, API e infraestructura (en su mayoría Cloud), los recursos ofrecidos por los servidores a las aplicaciones web se ha extendido 
+
+
+Dentro del sector, el uso de aplicaciones web en el ámbito de manejo de datos es adecuado para:
+* El ingreso y descarga de datos.
+* Visualización y monitoreo.
+* Publicación.
+
+Dentro del sector, el uso de entornos de trabajo basados en tecnologías web en el ámbito de manejo de datos es adecuado para:
+* El ingreso y descarga de datos.
+* Visualización y monitoreo
+* Procesamiento de datos:
+    * Limpieza de datos
+    * Análisis de datos
+    * Generación de reportes
+    * Aprendizaje Automatizao
+    * Generación de Modelos (Aprendizaje Automatizado)
+* Desarrollo de herramientas de visualización y monitoréo. 
 
 **Prueba de Uso: Entorno de Trabajo [mmayalab.ml](mmayalab.ml)**
 
 Entendiendo la novedad de este estilo de herrramientas, creí necesario poner a prueba sus capacidades y limitaciones. 
 
-Este servicio esta activo bajo el dominio "mmayalab.ml" y está implementado en un servidor del proveedor Cloud de Google (Google Cloud Platform). 
+Este servicio está activo bajo el dominio "mmayalab.ml" y está implementado en un servidor del proveedor Cloud de Google (Google Cloud Platform). Esta herramienta también puede ser puesta en producción en servidores en premisa (servidores físicos), asumiendo que estos proporcionen los requerimientos mínimos de funcionamiento.
 
-Los recursos de computo del sistema fueron calculados para proveer hasta 5 usuarios con un entorno de computo de alta capacidad.
+Las tecnologías utilizadas para la creación de este servicio (Jupyter & Kubernetes) fueron publicadas bajo licencias del tipo "open source" (BSD & Apache respectivamente), por lo que se adecuan a los planes nacionales de desarrollo tecnológico para instituciones públicas.
+
+Los recursos de computo del sistema fueron calculados para proveer hasta 5 usuarios con un entorno de computo de alta capacidad. Y haciendo uso de tecnologías de orquestración de contenedores (Kubernetes) es posible extender el servicio de manera dinámica a una capacidad indefinida de usuarios (por ejemplo, el proyecto [binder](https://mybinder.org) llega a orquestrar decenas de miles de usuarios simultáneos en este tipo de entornos de trabajo).  
 
 Dentro del sistema pusimos los datos geo-referenciados recopilados relacionados al SATD y creamos una aplicación interactiva que permite seleccionar capas y explorar sus datos por medio de diagramas interactivos.
-
-
-
-
-
-
-
